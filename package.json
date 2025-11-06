@@ -1,0 +1,30 @@
+{
+  "name": "bones-theme",
+  "version": "1.0.0",
+  "description": "Vite version",
+  "main": "src/app/index.js",
+  "type": "module",
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "sass": "^1.71.1",
+    "vite": "^6.3.5",
+    "vite-plugin-browser-sync": "^4.0.0"
+  },
+  "dependencies": {
+  },
+  "scripts": {
+    "build": "vite build",
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morganleek/bones-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morganleek/bones-theme/issues"
+  },
+  "homepage": "https://github.com/morganleek/bones-theme#readme"
+}

@@ -1,0 +1,16 @@
+{
+  "src/index.js": {
+    "file": "assets/main-w0jxatOw.js",
+    "name": "main",
+    "src": "src/index.js",
+    "isEntry": true,
+    "css": [
+      "assets/style_only-DrJGYcGr.css"
+    ]
+  },
+  "src/style.scss": {
+    "file": "assets/style_only-DrJGYcGr.css",
+    "src": "src/style.scss",
+    "isEntry": true
+  }
+}

@@ -1,0 +1,30 @@
+h1, h2, h3, h4, h5, h6 {
+	
+}
+
+.has-x-large-font-size {
+	line-height: var(--wp--custom--line-height--x-large);
+}
+.has-large-font-size {
+	line-height: var(--wp--custom--line-height--large);
+}
+.has-small-font-size {
+	line-height: var(--wp--custom--line-height--small);
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		&.has-x-large-font-size {
+			font-size: calc(var(--wp--custom--font-size--heading-#{$i}) * 1.3) !important;
+		}
+		&.has-large-font-size {
+			font-size: calc(var(--wp--custom--font-size--heading-#{$i}) * 1.15) !important;
+		}
+		&.has-medium-font-size {
+			font-size: var(--wp--custom--font-size--heading-#{$i}) !important;
+		}
+		&.has-small-font-size {
+			font-size: calc(var(--wp--custom--font-size--heading-#{$i}) * 0.85) !important;
+		}	
+	}
+}

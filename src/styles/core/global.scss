@@ -1,0 +1,53 @@
+@use '../core/mixins';
+
+* {
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	box-sizing: border-box;
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: inherit;
+	}
+}
+
+// :where(.wp-block-group.has-background) {
+// 	padding: 1.25em var(--wp--custom--spacing--outer);
+// 	// @media (min-width: 650px) {
+// 	// 	padding: 1.25em 2.375em;
+// 	// }
+// }
+
+img {
+	&[loading="lazy"] {
+		opacity: 0;
+		transition: opacity 0.2s;
+	}
+	&.has-loaded {
+		opacity: 1;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"], 
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="time"],
+input[type="week"],
+input[type="month"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"] {
+	@include mixins.text-input;
+}
+input[type="submit"],
+button {
+	@include mixins.button;
+}

@@ -1,0 +1,19 @@
+.wp-site-blocks {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	body.admin-bar & {
+		min-height: calc(100vh - var(--wp-admin--admin-bar--height));
+	}
+	& > footer {
+		margin-top: auto;
+	}
+}
+
+main {
+	&::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+}

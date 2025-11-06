@@ -1,0 +1,24 @@
+@mixin trim {
+	& > * {
+		&:first-child {
+			margin-top: 0;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@mixin text-input {
+	border-radius: 0;
+	&::placeholder {
+		color: #000;
+	}
+	&:focus-visible {
+		outline: 1px auto blue;
+	}
+}
+
+@mixin button {
+	border-radius: 0;
+}

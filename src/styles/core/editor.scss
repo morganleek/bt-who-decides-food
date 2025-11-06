@@ -1,0 +1,16 @@
+.edit-post-visual-editor__post-title-wrapper {
+	margin: 0 !important;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	h1, h2 {
+		&.wp-block-post-title {
+			font-size: 1.375rem;
+			line-height: 1.2em;
+		}
+	}
+	& > * {
+		width: calc(100% - 2 * var(--wp--custom--spacing--outer));
+		max-width: var(--wp--custom--sizing--narrow);
+    margin: 0 auto !important;
+		padding: 0.5em 0;
+	}
+}
