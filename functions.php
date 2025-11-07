@@ -20,7 +20,7 @@
 	add_action( 'wp_head', 'bones_theme_load_favicons', 20 );
 	add_action( 'current_screen', 'bones_theme_add_editor_styles', 20 );
 	add_action( 'init', 'bones_theme_init', 0 );
-	// add_action( 'wp_head', 'theme_fonts', 20 );
+	add_action( 'wp_head', 'theme_fonts', 20 );
 
 	// Frontend Actions
 	if ( ! is_admin() ) {
@@ -73,11 +73,9 @@
 	}
 
 	// Fonts
-	// function theme_fonts() {
-	// 	print '<link rel="preconnect" href="https://fonts.googleapis.com">';
-	// 	print '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
-	// 	print '<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">';
-	// }
+	function theme_fonts() {
+		print '<link rel="stylesheet" href="https://use.typekit.net/xja7kgn.css">';
+	}
 
 	// Load Editor Styles
 	function bones_theme_add_editor_styles( WP_Screen $screen ) {
@@ -85,6 +83,8 @@
 			return;
 		}
 		
+		add_editor_style( "https://use.typekit.net/xja7kgn.css" );
+
 		$main_entry = 'src/index.js';
 
 		try {
@@ -106,8 +106,8 @@
 
 	// Custom Block Types
 	function bones_name_register_block_styles() {
-		register_block_style( 'core/image', [
-			'name' => 'special-appearance',
-			'label' => __( 'Special', 'bones_name' ),
+		register_block_style( ['core/group', 'core/media-text'], [
+			'name' => 'above-grid',
+			'label' => __( 'Above Grid', 'bones_name' ),
 		] );
 	}

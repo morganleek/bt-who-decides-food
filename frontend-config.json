@@ -1,5 +1,5 @@
 {
-  "themeFolder": "bones-theme",
+  "themeFolder": "bt-who-decides-food",
   "distFolder": "dist",
   "viteServerPort": 3005,
   "devModeProxyHeader": "X-BS-Proxy"
