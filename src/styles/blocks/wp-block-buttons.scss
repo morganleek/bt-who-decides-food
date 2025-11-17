@@ -1,6 +1,22 @@
-// .wp-block-buttons {
-// 	.wp-block-button {
-// 		.wp-block-button__link {
-// 		}
-// 	}
-// }
+.wp-block-buttons {
+	.wp-block-button {
+		&:not(.is-style-naked) {
+			.wp-block-button__link {
+				font-size: calc(1.333 * var(--wp--custom--heading-3--typography--font-size));
+				font-family: var(--wp--preset--font-family--activist);
+				font-style: normal;
+				font-weight: 400;
+				line-height: var(--wp--custom--heading-3--typography--line-height);
+				text-transform: uppercase;
+				padding: 20px 20px;
+			}
+		}
+		&.is-style-naked {
+			.wp-block-button__link {
+				padding: 0;
+				background: transparent;
+				color: var(--wp--preset--color--wdf-blue);
+			}
+		}
+	}
+}

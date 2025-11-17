@@ -10,12 +10,19 @@
 }
 
 @mixin text-input {
-	border-radius: 0;
+	border-radius: 4px;
+	background-color: var(--wp--preset--color--wdf-light);
+	color: var(--wp--preset--color--black);
+	font-family: var(--wp--preset--font-family--sofia-pro);
+	font-size: var(--wp--preset--font-size--medium);
+	font-weight: 300;
+	line-height: 1.4em;
+	padding-left: 16px;
 	&::placeholder {
 		color: #000;
 	}
 	&:focus-visible {
-		outline: 1px auto blue;
+		outline: 0 none;
 	}
 }
 

@@ -110,4 +110,15 @@
 			'name' => 'above-grid',
 			'label' => __( 'Above Grid', 'bones_name' ),
 		] );
+		
+		register_block_style( ['core/button'], [
+			'name' => 'naked',
+			'label' => __( 'Naked', 'bones_name' ),
+		] );
 	}
+
+	add_filter( 'offset-blocks-default-sizes', function( $sizes ) {
+		return [
+			-7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7
+		];
+	} );

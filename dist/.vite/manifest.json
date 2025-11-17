@@ -1,15 +1,27 @@
 {
+  "src/images/plate-left@2x.png": {
+    "file": "assets/plate-left@2x-B8--d1RJ.png",
+    "src": "src/images/plate-left@2x.png"
+  },
+  "src/images/plate-right@2x.png": {
+    "file": "assets/plate-right@2x-sWK6SQvU.png",
+    "src": "src/images/plate-right@2x.png"
+  },
   "src/index.js": {
-    "file": "assets/main-CidWE7Ed.js",
+    "file": "assets/main-CzGMonbT.js",
     "name": "main",
     "src": "src/index.js",
     "isEntry": true,
     "css": [
-      "assets/style_only-BK63dDgL.css"
+      "assets/style_only-BXqOLukN.css"
+    ],
+    "assets": [
+      "assets/plate-left@2x-B8--d1RJ.png",
+      "assets/plate-right@2x-sWK6SQvU.png"
     ]
   },
   "src/style.scss": {
-    "file": "assets/style_only-BK63dDgL.css",
+    "file": "assets/style_only-BXqOLukN.css",
     "src": "src/style.scss",
     "isEntry": true
   }

@@ -1,4 +1,10 @@
-// header.wp-block-template-part {
+.wp-block-template-part {
+	&:is(header) {
+		.wp-block-site-logo {
+			max-width: min(25vw, 100%) !important;
+		}
+	}
+}
 // 	& > .wp-block-group {
 // 		padding-left: var(--wp--custom--spacing--outer);
 // 		padding-right: var(--wp--custom--spacing--outer);
@@ -28,3 +34,4 @@
 // 	& > .wp-block-group {
 // 	}
 // }
+

@@ -1,2 +1,66 @@
 .wp-block-group {
+	&.our-supporter-grid {
+		row-gap: var(--wp--preset--spacing--60); 
+		@media (width < 600px) {
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+			// row-gap: var(--wp--preset--spacing--30);
+			& > * {
+				grid-column: span 1;
+			}
+		}
+		@media (min-width: 600px) and (width < 992px) {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			// row-gap: var(--wp--preset--spacing--30);
+			& > * {
+				grid-column: span 1;
+			}
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	&.image-oversized {
+		img {
+			width: calc(100% + var(--offset-block--3));
+		}
+	}
+	&.signup-plate,
+	&.signup-button {
+		z-index: 10;
+	}
+	@media (width < 781px) {
+		transform: translate(0, 0) !important;
+	}
+	&.blue-block {
+		@media (min-width: 782px) { 
+			padding-right: 0 !important;
+		}
+	}
+	&.search-wrapper {
+		position: relative;
+		form {
+			position: absolute;
+			top: 100%;
+			right: 0;
+			pointer-events: none;
+			opacity: 0;
+			transition: all 0.2s;
+			transform: translate(0, -10px);
+			body.show-search & {
+				opacity: 1;
+				transform: translate(0, 0);
+				pointer-events: all;
+			}
+			button {
+				font-size: var(--wp--custom--heading-4--typography--font-size);
+				font-family: var(--wp--preset--font-family--activist);
+				font-style: normal;
+				font-weight: 400;
+				line-height: var(--wp--custom--heading-4--typography--line-height);
+				text-transform: uppercase;
+				padding: 16px 20px;
+			}
+		}
+	}
 }

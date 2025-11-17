@@ -28,19 +28,19 @@
 		"custom": {
 			"heading-1": {
 				"typography": {
-					"fontSize": "6.25rem",
+					"fontSize": "clamp(2.5rem, 0.1563rem + 7.5vw, 6.25rem)",
 					"lineHeight": "1"
 				}
 			},
 			"heading-2": {
 				"typography": {
-					"fontSize": "3.625rem",
+					"fontSize": "clamp(2rem, 0.9844rem + 3.25vw, 3.625rem)",
 					"lineHeight": "1"
 				}
 			},
 			"heading-3": {
 				"typography": {
-					"fontSize": "2.25rem",
+					"fontSize": "clamp(1.8rem, 1.5188rem + 0.9vw, 2.25rem)",
 					"lineHeight": "1"
 				}
 			},
@@ -74,57 +74,52 @@
 		"dimensions": {
 			"aspectRatios": [
 				{
-					"name": "4:5",
-					"ratio": "4/5",
-					"slug": "four-five-tall"
-				},
-				{
-					"name": "5:4",
-					"ratio": "5/4",
-					"slug": "five-four-wide"
+					"name": "Short Portrait - 11:13",
+					"ratio": "11/13",
+					"slug": "11-13"
 				}
 			],
 			"defaultAspectRatios": true
 		},
 		"layout": {
 			"contentSize": "1000px",
-			"wideSize": "1200px"
+			"wideSize": "1300px"
 		},
 		"spacing": {
 			"defaultSpacingSizes": false,
 			"spacingSizes": [
 				{
-					"size": "1.125rem",
+					"size": "clamp(0.5rem, 0.1094rem + 1.25vw, 1.125rem)",
 					"name": "18",
 					"slug": "20"
 				},
 				{
-					"size": "2.25rem",
+					"size": "clamp(1.125rem, 0.4219rem + 2.25vw, 2.25rem)",
 					"name": "36",
 					"slug": "30"
 				},
 				{
-					"size": "3.375rem",
+					"size": "clamp(1.75rem, 0.7344rem + 3.25vw, 3.375rem)",
 					"name": "54",
 					"slug": "40"
 				},
 				{
-					"size": "4.5rem",
+					"size": "clamp(2.25rem, 0.8438rem + 4.5vw, 4.5rem)",
 					"name": "72",
 					"slug": "50"
 				},
 				{
-					"size": "5.625rem",
+					"size": "clamp(2.875rem, 1.1563rem + 5.5vw, 5.625rem)",
 					"name": "90",
 					"slug": "60"
 				},
 				{
-					"size": "6.75rem",
+					"size": "clamp(3.375rem, 1.2656rem + 6.75vw, 6.75rem)",
 					"name": "108",
 					"slug": "70"
 				},
 				{
-					"size": "7.875rem",
+					"size": "clamp(3.875rem, 1.375rem + 8vw, 7.875rem)",
 					"name": "126",
 					"slug": "80"
 				}
@@ -302,7 +297,9 @@
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--sofia-pro)",
-			"fontWeight": "300"
+			"fontWeight": "300",
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"lineHeight": "1.4em"
 		}
 	},
 	"templateParts": [
