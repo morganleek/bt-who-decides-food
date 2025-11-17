@@ -40,3 +40,46 @@ strong {
 		}	
 	}
 }
+
+
+.forminator-edit-module {
+	display: none;
+}
+
+.forminator-ui.forminator-custom-form[data-design=basic] {
+	.forminator-label {
+		font-weight: 400;
+	}
+	.forminator-button {
+		font-size: var(--wp--custom--heading-4--typography--font-size);
+    font-family: var(--wp--preset--font-family--activist);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--wp--custom--heading-3--typography--line-height);
+    text-transform: uppercase;
+    padding: 20px 20px;
+		border: 0 none;
+		background-color: #000;
+		color: #fff;
+	}
+	.forminator-field:has(> .forminator-button) {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.forminator-row {
+		&.forminator-row-last {
+			margin-bottom: 0 !important;
+		}
+	}
+	.forminator-response-message.forminator-success {
+		color: #067963 !important;
+		text-align: center;
+		box-shadow: none !important;
+	}
+}
+
+@media (min-width: 783px) {
+	.forminator-ui.forminator-custom-form:not(.forminator-size--small)[data-grid=open] .forminator-row-inside:not(:last-child), .forminator-ui.forminator-custom-form:not(.forminator-size--small)[data-grid=open] .forminator-row:not(:last-child) {
+		margin-bottom: 24px;
+	}
+}

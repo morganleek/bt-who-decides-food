@@ -17,7 +17,12 @@
 	font-size: var(--wp--preset--font-size--medium);
 	font-weight: 300;
 	line-height: 1.4em;
-	padding-left: 16px;
+	font-size: 1.25rem;
+	font-family: inherit;
+	padding: 16px 16px;
+	border-width: 0;
+	border-style: none;
+	border-radius: 0;
 	&::placeholder {
 		color: #000;
 	}

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	} );
 
 	// Search 
-	document.querySelector( ".search-wrapper .wp-block-button .wp-block-button__link" ).addEventListener( "click", e => {
+	document.querySelector( ".search-wrapper .wp-block-button .wp-block-button__link" )?.addEventListener( "click", e => {
 		e.preventDefault();
 		document.body.classList.toggle( "show-search" );
 	} );
@@ -30,5 +30,29 @@ document.addEventListener('DOMContentLoaded', () => {
 		if( e.target.closest( ".search-wrapper" ) === null && document.body.classList.contains( "show-search" ) ) {
 			document.body.classList.remove( "show-search" );
 		}
+		console.log( e.target.closest( ".signup-form-inner" ) );
+		console.log( e.target.closest( ".signup-buttons") );
+		if( ( e.target.closest( ".signup-form-inner" ) === null && e.target.closest( ".signup-buttons") === null ) && document.body.classList.contains( "show-signup" ) ) {
+			document.body.classList.remove( "show-signup" );
+		}
 	} );
+
+	document.querySelector( ".close-signup" )?.addEventListener( "click", e => {
+		e.preventDefault();
+		document.body.classList.toggle( "show-signup" );
+	} );
+
+	document.querySelectorAll( "a[href*=\"#sign-up\"]" ).forEach( link => {
+		link.addEventListener( "click", e => {
+			e.preventDefault();
+			document.body.classList.toggle( "show-signup" );
+		} );
+	} );
+
+	document.addEventListener('keydown', e => {
+		if ( e.key === 'Escape' ) {
+			document.body.classList.remove( "show-search" );
+			document.body.classList.remove( "show-signup" );
+		}
+	});
 });
