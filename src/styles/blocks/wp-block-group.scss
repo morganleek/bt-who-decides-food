@@ -73,9 +73,11 @@
 		opacity: 0;
 		pointer-events: none;
 		transition: all 0.2s;
-		display: flex;
-    align-items: center;
-    justify-content: center;
+		// display: flex;
+    // align-items: center;
+    // justify-content: center;
+		height: 100dvh;
+		overflow: scroll;
 		body.show-signup & {
 			opacity: 1;
 			pointer-events: all;

@@ -78,6 +78,15 @@ strong {
 	}
 }
 
+.forminator-ui#forminator-module-210.forminator-design--basic .forminator-select2 + .forminator-select .selection .select2-selection--single[role="combobox"] {
+	border-color: transparent !important;
+}
+.forminator-ui.forminator-custom-form[data-design="basic"] select.forminator-select2 + .forminator-select .selection span[role="combobox"].select2-selection--multiple .select2-selection__rendered, 
+.forminator-ui.forminator-custom-form[data-design="basic"] select.forminator-select2 + .forminator-select .selection span[role="combobox"].select2-selection--single .select2-selection__rendered {
+	padding: 16px !important;
+}
+
+
 @media (min-width: 783px) {
 	.forminator-ui.forminator-custom-form:not(.forminator-size--small)[data-grid=open] .forminator-row-inside:not(:last-child), .forminator-ui.forminator-custom-form:not(.forminator-size--small)[data-grid=open] .forminator-row:not(:last-child) {
 		margin-bottom: 24px;
