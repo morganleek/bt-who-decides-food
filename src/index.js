@@ -30,9 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		if( e.target.closest( ".search-wrapper" ) === null && document.body.classList.contains( "show-search" ) ) {
 			document.body.classList.remove( "show-search" );
 		}
-		console.log( e.target.closest( ".signup-form-inner" ) );
-		console.log( e.target.closest( ".signup-buttons") );
-		if( ( e.target.closest( ".signup-form-inner" ) === null && e.target.closest( ".signup-buttons") === null ) && document.body.classList.contains( "show-signup" ) ) {
+		
+		if( ( e.target.closest( ".signup-form-inner" ) === null && e.target.closest( ".signup-buttons") === null && e.target.closest( ".wp-block-navigation") === null ) && document.body.classList.contains( "show-signup" ) ) {
 			document.body.classList.remove( "show-signup" );
 		}
 	} );
