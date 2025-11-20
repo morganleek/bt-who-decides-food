@@ -77,6 +77,11 @@
 					"name": "Short Portrait - 11:13",
 					"ratio": "11/13",
 					"slug": "11-13"
+				},
+				{
+					"name": "Short Landscape - 13:11",
+					"ratio": "13/11",
+					"slug": "13-11"
 				}
 			],
 			"defaultAspectRatios": true
