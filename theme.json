@@ -40,7 +40,7 @@
 			},
 			"heading-3": {
 				"typography": {
-					"fontSize": "clamp(1.8rem, 1.5188rem + 0.9vw, 2.25rem)",
+					"fontSize": "clamp(1.8rem, 1.3937rem + 1.3vw, 2.45rem)",
 					"lineHeight": "1"
 				}
 			},
