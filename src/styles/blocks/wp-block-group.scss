@@ -86,4 +86,19 @@
 			width: 100%;
 		}
 	}
+	&.wdf-header-logo {
+		width: 216px;
+		min-height: 190px;
+		display: flex;
+		align-items: center;
+		h1 {
+			font-size: 38px;
+		}
+		@media (min-width: 1080px) { 
+			width: 864px;
+			h1 {
+				font-size: 82px;
+			}
+		}
+	}
 }
