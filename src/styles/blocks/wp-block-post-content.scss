@@ -8,13 +8,13 @@
 		top: 0;
 		width: 150px;
 		height: 302px;
-		background: url(./images/plate-left@2x.png) 0 0/100% auto no-repeat;
+		background: url(./images/plate-left@2x.avif) 0 0/100% auto no-repeat;
 		pointer-events: none;
 	}	
 	&::after {
 		left: auto;
 		right: 0;
 		top: 180px;
-		background-image: url(./images/plate-right@2x.png);
+		background-image: url(./images/plate-right@2x.avif);
 	}
 }
