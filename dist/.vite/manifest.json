@@ -1,15 +1,22 @@
 {
+  "src/images/plate-left@2x.avif": {
+    "file": "assets/plate-left@2x-BpizgeBT.avif",
+    "src": "src/images/plate-left@2x.avif"
+  },
   "src/index.js": {
-    "file": "assets/main-D2VwFbtN.js",
+    "file": "assets/main-DfPORa2f.js",
     "name": "main",
     "src": "src/index.js",
     "isEntry": true,
     "css": [
-      "assets/style_only-Dt-wpxMf.css"
+      "assets/style_only-DdgLYIC5.css"
+    ],
+    "assets": [
+      "assets/plate-left@2x-BpizgeBT.avif"
     ]
   },
   "src/style.scss": {
-    "file": "assets/style_only-Dt-wpxMf.css",
+    "file": "assets/style_only-DdgLYIC5.css",
     "src": "src/style.scss",
     "isEntry": true
   }
